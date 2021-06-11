@@ -52,3 +52,5 @@ function calcularTotal(){
     }
 
 }
+var tbl = document.getElementById("tbl_listaproductos");
+    var tblBody = document.createElement("tbody");
