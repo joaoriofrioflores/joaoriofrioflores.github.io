@@ -23,7 +23,7 @@ function cargarListaProductos(){
     listaProductos = cargarProductos(); //Cargo y capturo el array    
     listaProductos.forEach(producto => {
         contador++; 
-        var fila = tabla.insertRow(0); //Creo la fila
+        var fila = tabla.insertRow(-1); //Creo la fila
         var celda0 = fila.insertCell(0); //Inserto la celda 0
         celda0.innerHTML = producto.Nombre; // cargo el dato en la celda
         var celda1 = fila.insertCell(1); 
@@ -42,6 +42,7 @@ function habilitaTexto(objeto){
     texto.disabled = !(texto.disabled); //operador monario = NIEGA 
     //Borrar el texto una vez que se vuelve a deshabilitar
 }
+document=getElementById(tag)=""
 
 function calcularTotal(){
     var tabla = document.getElementById("tbl_listaProductos");
